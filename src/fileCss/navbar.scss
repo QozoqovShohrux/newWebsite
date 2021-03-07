@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka One", cursive;
+    user-select: none;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 10px 0;
+    background: transparent;
+    .navbar-dark .navbar-toggler {
+        color: rgba(255, 255, 255, .5);
+        border-color: rgba(255, 255, 255, .1);
+    }
+    .navbar-brand {
+        color: #17a2b8;
+        font-size: 20px;
+        font-weight: 700;
+        font-size: 28px !important;
+        letter-spacing: .75px;
+        &:hover {
+            color: #087181;
+        }
+    }
+    .navbar-toggler {
+        background: none !important;
+    }
+    .navbar-nav {
+        .nav-item {
+            .nav-link {
+                position: relative;
+                top: 0px;
+                color: rgba(255, 255, 255, .5);
+                font-size: 20px;
+                padding: 0 1.25rem;
+                font-weight: 700;
+                letter-spacing: 2.5px !important;
+                &:hover {
+                    color: rgba(255, 255, 255, .75);
+                }
+                &::before {
+                    content: "";
+                    position: relative;
+                    top: -5px;
+                    left: 50%;
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: #17a2b8;
+                    transition: .5s all .5s linear;
+                }
+                &::after {
+                    content: "";
+                    position: relative;
+                    top: 5px;
+                    display: block;
+                    width: 0;
+                    height: 2px;
+                    background: #17a2b8;
+                    transition: .5s linear;
+                }
+                &:hover::before {
+                    width: 50%;
+                }
+                &:hover::after {
+                    width: 50%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .navbar {
+        .navbar-brand {
+            font-weight: 200 !important;
+            margin-left: .45rem !important;
+            line-height: 10px !important;
+            font-size: 24px !important;
+            letter-spacing: 2px !important;
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    position: relative;
+                    bottom: 7px;
+                    color: rgba(255, 255, 255, .5);
+                    font-size: 20px;
+                    padding: 0 1.25rem 0 .5rem;
+                    font-weight: 700;
+                    line-height: 50px;
+                    letter-spacing: 2.5px !important;
+                }
+            }
+        }
+        .navbar-toggler {
+            background: none !important;
+            border: none !important;
+            float: right !important;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka One", cursive;
+    user-select: none !important;
+    text-decoration: none !important;
+}
+
+#home {
+    height: 100vh;
+    min-height: 500px;
+    background: url(../images/bg.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#home .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+}
+
+#home .content {
+    width: 100%;
+    color: #fff;
+    padding: 0 0 0 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+#home .content h1 {
+    font-size: 60px;
+    margin-bottom: 60px;
+}
+
+#home .content h1::after {
+    content: "Kazakoff";
+    animation: changeName 20s linear infinite;
+}
+
+@keyframes changeName {
+    25% {
+        content: "a Kazakoff";
+    }
+    50% {
+        content: "a FullSteck";
+    }
+    75% {
+        content: "a Developer";
+    }
+}
+
+.sm a {
+    color: #fff;
+    font-size: 22px;
+    transition: .2s linear;
+    margin: 0 17.8px;
+    position: relative;
+    top: -5px;
+    &:hover {
+        color: #48dbfb;
+        transform: scale(1.2);
+    }
+}
+
+#home .buttons {
+    margin-top: 50px;
+}
+
+#home .buttons a {
+    display: inline-block;
+    margin: 15px 30px;
+    color: #48dbfb;
+    font-size: 15px;
+    font-weight: 500;
+    border: 1px solid;
+    padding: 14px 0;
+    width: 350px;
+    text-align: center;
+    border-radius: 6px;
+    transition: .2s linear;
+}
+
+#home .buttons a:hover {
+    background-color: #48dbfb;
+    color: #fff;
+}
+
+@media screen and (max-width: 980px) {
+    #home .buttons a {
+        width: 200px;
+    }
+}
