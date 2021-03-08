@@ -45,9 +45,9 @@ const About = () => {
             <div className="card-footer">
               <div className="d-flex foter align-items-center justify-content-around">
                 <div  size={{ fontSize: "24px" }}>
-                  <i
+                  <i 
                     className="far fa-envelope fa-2x"
-                    style={{ verticalAlign: "-5px" }}
+                    style={{ verticalAlign: "-5px" , lineHeight: "35px" }}
                   ></i>
                   Email : shohchakiller@gmail.com
                 </div>
