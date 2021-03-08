@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Fredoka One", cursive;
+    user-select: none;
+    text-decoration: none;
+}
+
+#about,
+#skills,
+#works,
+#contact {
+    position: relative;
+    top: 0px;
+    color: #212529 !important;
+    font-weight: 700;
+    letter-spacing: 2.5px !important;
+    &:hover {
+        color: rgba(255, 255, 255, .75);
+    }
+    &::before {
+        content: "";
+        position: relative;
+        top: 25px;
+        left: 50%;
+        display: block;
+        width: 50%;
+        height: 4px;
+        background: #17a2b8;
+        transition: 0.4s all 0.4s linear;
+    }
+    &::after {
+        content: "";
+        position: relative;
+        bottom: 25px;
+        display: block;
+        width: 50%;
+        height: 4px;
+        background: #17a2b8;
+        transition: 0.4s linear;
+    }
+    &:hover::after {
+        width: 0;
+    }
+    &:hover::before {
+        width: 0;
+    }
+    .color {
+        color: #000;
+    }
+}
+
+.row {
+    width: 100%!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .col-lg-4 {
+        padding-left: 50px !important;
+        img {
+            width: 400px;
+            box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+        }
+    }
+    .col-lg-8 {
+        .card {
+            margin-left: 50px;
+            width: 90%;
+            .card-header {
+                h1 {
+                    font-size: 24px !important;
+                }
+            }
+            .card-body {
+                .text {
+                    font-size: 18px;
+                    padding-bottom: 60px;
+                }
+            }
+        }
+    }
+}
+
+// technoligy skills
+.row .col-md-6 {
+    cursor: pointer;
+    border-radius: 1rem;
+    transition: .5s all linear;
+}
+
+.row .col-md-6:hover {
+    box-shadow: 1px 1px 10px 0 #a0a4a770;
+    .html5,
+    .sass,
+    .bootstrap,
+    .javascript,
+    .jquery,
+    .react,
+    .redux {
+        transform: scale(1.2);
+    }
+    .css3 {
+        transform: scale(1.5);
+    }
+}
+
+.img-top {
+    height: 280px;
+    background-size: 50% !important;
+}
+
+.html5 {
+    transition: .75s linear;
+    background: url(../images/html5.svg) no-repeat center center;
+}
+
+.css3 {
+    transition: .75s linear;
+    background: url(../images/css3.svg) no-repeat center center;
+}
+
+.sass {
+    transition: .75s linear;
+    background: url(../images/sass-1.svg) no-repeat center center;
+}
+
+.bootstrap {
+    transition: .75s linear;
+    background: url(../images/bootstrap-4.svg) no-repeat center center;
+}
+
+.javascript {
+    transition: .75s linear;
+    background: url(../images/javascript.svg) no-repeat center center;
+}
+
+.jquery {
+    transition: .75s linear;
+    background: url(../images/jquery.svg) no-repeat center center;
+}
+
+.react {
+    transition: .75s linear;
+    background: url(../images/react-2.svg) no-repeat center center;
+}
+
+.redux {
+    transition: .75s linear;
+    background: url(../images/redux.svg) no-repeat center center;
+}
+
+@media (max-width: 468px) {
+    #about {
+        .color {
+            font-size: 36px;
+        }
+    }
+    .row {
+        .col-lg-4 {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-left: 0 !important;
+            img {
+                margin-left: 40px;
+                margin-bottom: 50px;
+            }
+        }
+        .col-lg-8 {
+            .card {
+                width: 100%;
+                margin-left: 15px;
+                .card-header {
+                    h1 {
+                        font-size: 24px !important;
+                    }
+                }
+                .card-footer {
+                    display: block !important;
+                    .foter {
+                        font-size: 10px;
+                        display: block !important;
+                    }
+                }
+            }
+        }
+        .col-md-6 {
+            margin-left: 30px !important;
+        }
+        .col-md-6:hover {
+            box-shadow: 1px 1px 10px 0 #a0a4a770;
+            .html5,
+            .sass,
+            .bootstrap,
+            .javascript,
+            .jquery,
+            .react,
+            .redux {
+                transform: scale(1.05) !important;
+            }
+            .css3 {
+                transform: scale(1.2) !important;
+            }
+        }
+    }
+}
+
+@media (min-width:469px) and (max-width: 980px) {
+    #about {
+        .color {
+            font-size: 36px;
+        }
+    }
+    .row {
+        .col-md-6 {
+            margin-left: 20px !important;
+        }
+        .col-md-6:hover {
+            box-shadow: 1px 1px 10px 0 #a0a4a770;
+            .html5,
+            .sass,
+            .bootstrap,
+            .javascript,
+            .jquery,
+            .react,
+            .redux {
+                transform: scale(1.05) !important;
+            }
+            .css3 {
+                transform: scale(1.2) !important;
+            }
+        }
+        .col-lg-4 {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            padding-left: 0 !important;
+            img {
+                margin-left: 40px;
+                margin-bottom: 50px;
+            }
+        }
+        .col-lg-8 {
+            .card {
+                width: 100%;
+                margin-left: 15px;
+                .card-header {
+                    h1 {
+                        font-size: 24px !important;
+                    }
+                }
+                .card-footer {
+                    display: block !important;
+                }
+            }
+        }
+    }
+}
