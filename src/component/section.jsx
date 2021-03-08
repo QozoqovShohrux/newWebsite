@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 import "../fileCss/section.scss";
 <link
   rel="stylesheet"
@@ -10,26 +11,26 @@ const Section = () => {
         <div className="content">
           <h1>Hi I'm </h1>
           <div className="sm">
-            <a
-              href="https://www.facebook.com/"
+          <Link
+              to="/https://www.facebook.com/"
               className="fab fa-facebook-f"
               target="_blank"
-            ></a>
-            <a
-              href="t.me/abdirahimovich"
+            ></Link>
+            <Link
+              to="/t.me/abdirahimovich"
               className="fab fa-telegram"
               target="_blank"
-            ></a>
-            <a
-              href="https://www.instagram.com/shoxrux_77775/"
+            ></Link>
+            <Link
+              to="https://www.instagram.com/shoxrux_77775/"
               className="fab fa-instagram"
               target="_blank"
-            ></a>
-            <a
-              href="https://youtu.be/fX87iHCDyr4"
+            ></Link>
+            <Link
+              to="https://youtu.be/fX87iHCDyr4"
               className="fab fa-youtube"
               target="_blank"
-            ></a>
+            ></Link>
           </div>
           <div className="buttons">
             <a href="#portfolio">Portfolio</a>

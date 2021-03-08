@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.css";
+import {Link} from "react-router-dom";
 import {FaArrowCircleUp} from 'react-icons/fa';
 import React, {useState} from 'react';
 
@@ -37,10 +38,18 @@ window.addEventListener('scroll', checkScrollTop)
           <div className="col-sm-12 col-lg-4 p-5">
             <h5 className="text-white">Follow me</h5>
             <p className="my-3 icons">
-              <a href="https://www.instagram.com/shoxrux_77775/"target="_blank"><i className="fab fa-instagram"></i></a>
-              <a href="https://t.me/abdirahimovich" target="_blank"><i className="fab fa-telegram-plane mx-2"></i></a>
-              <a href="https://youtu.be/fX87iHCDyr4"><i className="fab fa-youtube" target="_blank"></i></a>
-              <a href="https://github.com/QozoqovShohrux" target="_blank"><i className="fab fa-github mx-2"></i></a>
+            <Link to="/https://www.instagram.com/shoxrux_77775/" >
+              <i className="fab fa-instagram"></i>
+              </Link>
+              <Link to="/https://t.me/abdirahimovich" >
+              <i className="fab fa-telegram-plane mx-2"></i>
+              </Link>
+              <Link to="/https://youtu.be/fX87iHCDyr4" >
+              <i className="fab fa-youtube" target="_blank"></i>
+              </Link>
+              <Link to="/https://github.com/QozoqovShohrux">
+              <i className="fab fa-github mx-2"></i>
+              </Link>
             </p>
           </div>
           <div className="col-sm-12 col-lg-4 p-5">
