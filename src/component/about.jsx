@@ -74,7 +74,7 @@ const About = () => {
         </div>
       </section>
       <div className="row my-5 owl-carousel owl-theme">
-              <div className="col-sm-12 col-md-6 col-lg-3 my-3" data-aos="zoom-in">
+              <div className="col-sm-12 col-md-6 colmd6 col-lg-3 my-3" data-aos="zoom-in">
                <div className="img-top html5"></div>
                 <div>
                   <h2 className="text-center" style={{color: "#e44d26"}}>HTML 5</h2>

@@ -13,46 +13,46 @@ const Works = () => {
         </div>
       </section>
       <div className="row back mt-5 pt-5 mb-5 px-5">
-        <a href="images/works/1.jpg" class="work">
+        <a href="images/works/1.jpg" className="work">
           <img src="../images/works/1.jpg" alt="" />
-          <div class="info">
+          <div className="info">
             <h3>Work Title</h3>
-            <div class="cat">Music, Headset</div>
+            <div className="cat">Music, Headset</div>
           </div>
         </a>
-        <a href="images/works/2.jpg" class="work">
+        <a href="images/works/2.jpg" className="work">
           <img src="../images/works/2.jpg" alt="" />
-          <div class="info">
+          <div className="info">
             <h3>Work Title</h3>
-            <div class="cat">Watch, Headset</div>
+            <div className="cat">Watch, Headset</div>
           </div>
         </a>
-        <a href="images/works/3.jpg" class="work">
+        <a href="images/works/3.jpg" className="work">
           <img src="../images/works/3.jpg" alt="" />
-          <div class="info">
+          <div className="info">
             <h3>Work Title</h3>
-            <div class="cat">Krasovka, Headset</div>
+            <div className="cat">Krasovka, Headset</div>
           </div>
         </a>
-        <a href="images/works/4.jpg" class="work">
+        <a href="images/works/4.jpg" className="work">
           <img src="../images/works/4.jpg" alt="" />
-          <div class="info">
+          <div className="info">
             <h3>Work Title</h3>
-            <div class="cat">Watch, Headset</div>
+            <div className="cat">Watch, Headset</div>
           </div>
         </a>
-        <a href="images/works/5.jpg" class="work">
+        <a href="images/works/5.jpg" className="work">
           <img src="../images/works/5.jpg" alt="" />
-          <div class="info">
+          <div className="info">
             <h3>Work Title</h3>
-            <div class="cat">Camere, Headset</div>
+            <div className="cat">Camere, Headset</div>
           </div>
         </a>
-        <a href="images/works/6.jpg" class="work">
+        <a href="images/works/6.jpg" className="work">
           <img src="../images/works/6.jpg" alt="" />
-          <div class="info">
+          <div className="info">
             <h3>Work Title</h3>
-            <div class="cat">Navushnik, Headset</div>
+            <div className="cat">Navushnik, Headset</div>
           </div>
         </a>
       </div>

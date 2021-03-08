@@ -19,8 +19,8 @@ const Contact = () => {
               style={{fontSize: "18px"}}
             >
               <div>
-                <h5>Adress</h5>
-                <p className="text-info" >Uzbekistan, Tashkent, Yunusobod</p>
+                <h5 className="text-center">Adress</h5>
+                <p className="text-info text-center" >Uzbekistan, Tashkent, Yunusobod</p>
               </div>
               <div className="my-5">
                 <h5>Phone</h5>

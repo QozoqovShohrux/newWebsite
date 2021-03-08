@@ -1,0 +1,91 @@
+.footer {
+    background: url(../images/bg.jpg) no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+}
+
+.text-white {
+    color: #fff!important;
+}
+
+.icons {
+    a {
+        color: #fff;
+        font-size: 22px;
+        margin: 0 2.8px;
+        position: relative;
+        top: -5px;
+        i {
+            transition: .4s linear;
+            &:hover {
+                color: #48dbfb;
+                transform: scale(1.2);
+            }
+        }
+    }
+}
+
+.list-link {
+    transition: 0.4s linear;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.list-link:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 468px) {
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a {
+            margin-left: 5px;
+        }
+    }
+}
+
+@media (max-width: 980px) {
+    .about {
+        p {
+            margin-left: 25px;
+        }
+    }
+    .icons {
+        a {
+            margin-left: 35px;
+        }
+    }
+    .list-group {
+        margin-left: 20px;
+    }
+}
+
+.scrollTop {
+    position: fixed;
+    z-index: 999;
+    bottom: 40px;
+    right: 40px;
+    width: 40px;
+    height: 40px;
+    color: #48dbfb;
+    cursor: pointer;
+    animation: fadeIn 0.3s;
+    transition: opacity 0.4s;
+    opacity: 0.5;
+}
+
+.scrollTop:hover {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
